@@ -15,7 +15,7 @@
 		A10000000000000000000006 /* DTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000016 /* DTOs.swift */; };
 		A10000000000000000000007 /* DashboardPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000017 /* DashboardPayload.swift */; };
 		A10000000000000000000008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* Assets.xcassets */; };
-		A10000000000000000000044 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* RootTabView.swift */; };
+		A10000000000000000000046 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* RootTabView.swift */; };
 		A1000000000000000000000B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001A /* APIClient.swift */; };
 		A1000000000000000000000C /* DashboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001B /* DashboardStore.swift */; };
 		A1000000000000000000000D /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001C /* SignalView.swift */; };
@@ -235,7 +235,7 @@
 				A10000000000000000000001 /* ETHStrategyApp.swift in Sources */,
 				A10000000000000000000003 /* MarketView.swift in Sources */,
 				A1000000000000000000000B /* APIClient.swift in Sources */,
-				A10000000000000000000044 /* RootTabView.swift in Sources */,
+				A10000000000000000000046 /* RootTabView.swift in Sources */,
 				A1000000000000000000000E /* SettingsView.swift in Sources */,
 				A1000000000000000000000D /* SignalView.swift in Sources */,
 				A10000000000000000000004 /* TradingChartWebView.swift in Sources */,
