@@ -25,4 +25,22 @@ jobs:
 
       - name: Build iOS app for simulator
         run: |
-          xcodebuild             -project ETHStrategyIOS.xcodeproj             -scheme ETHStrategyIOS             -configuration Debug             -sdk iphonesimulator             CODE_SIGNING_ALLOWED=NO             build
+          xcodebuild \
+            -project ETHStrategyIOS.xcodeproj \
+            -scheme ETHStrategyIOS \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Boot simulator and launch app
+        run: |
+          UDID=$(xcrun simctl list devices available iPhone | grep -m1 -E -o '[0-9A-F-]{36}')
+          echo "Using simulator: $UDID"
+          xcrun simctl boot "$UDID" || true
+          xcrun simctl bootstatus "$UDID" -b
+          APP_PATH=$(find build/DerivedData/Build/Products -path '*Debug-iphonesimulator/ETHStrategyIOS.app' | head -n 1)
+          test -n "$APP_PATH"
+          xcrun simctl install "$UDID" "$APP_PATH"
+          xcrun simctl launch "$UDID" com.nous.ethstrategyios
