@@ -14,10 +14,14 @@
 
 ## 当前已建立内容
 
+- `ETHStrategyIOS.xcodeproj`：可直接在 Xcode 打开的 iOS App 工程骨架
 - `ETHStrategyIOS/App`：App 入口与配置
 - `ETHStrategyIOS/Features/Market`：主行情页与图表容器
-- `ETHStrategyIOS/Networking`：接口模型
-- `ETHStrategyIOS/Shared`：共享模型
+- `ETHStrategyIOS/Features/Signal`：信号卡片页
+- `ETHStrategyIOS/Features/Settings`：设置页
+- `ETHStrategyIOS/Networking`：接口模型与 APIClient
+- `ETHStrategyIOS/Shared`：共享模型与 DashboardStore
+- `.github/workflows/ios-build.yml`：GitHub Actions iOS 编译检查
 
 ## 推荐后续实现顺序
 

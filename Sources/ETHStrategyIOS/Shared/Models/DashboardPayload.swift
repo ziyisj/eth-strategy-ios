@@ -55,6 +55,7 @@ struct DashboardMeta: Codable {
     let bar: String
     let strategy: String
     let strategyLabel: String
+    let strategyChoices: [StrategyChoice]?
 
     enum CodingKeys: String, CodingKey {
         case refreshSeconds = "refresh_seconds"
@@ -62,5 +63,11 @@ struct DashboardMeta: Codable {
         case bar
         case strategy
         case strategyLabel = "strategy_label"
+        case strategyChoices = "strategy_choices"
     }
+}
+
+struct StrategyChoice: Codable, Hashable {
+    let name: String
+    let label: String
 }

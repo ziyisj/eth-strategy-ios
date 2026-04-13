@@ -1,0 +1,28 @@
+name: ios-build
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Sources/**'
+      - 'Resources/**'
+      - 'ETHStrategyIOS.xcodeproj/**'
+      - '.github/workflows/ios-build.yml'
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: List schemes
+        run: xcodebuild -list -project ETHStrategyIOS.xcodeproj
+
+      - name: Build iOS app for simulator
+        run: |
+          xcodebuild             -project ETHStrategyIOS.xcodeproj             -scheme ETHStrategyIOS             -configuration Debug             -sdk iphonesimulator             CODE_SIGNING_ALLOWED=NO             build

@@ -1,8 +1,20 @@
 import Foundation
 
-enum APIError: Error {
+enum APIError: LocalizedError {
+    case invalidURL
     case invalidResponse
-    case decodingFailed
+    case decodingFailed(Error)
+
+    var errorDescription: String? {
+        switch self {
+        case .invalidURL:
+            return "接口地址无效"
+        case .invalidResponse:
+            return "服务器返回了无效响应"
+        case .decodingFailed(let error):
+            return "数据解析失败：\(error.localizedDescription)"
+        }
+    }
 }
 
 struct CandleDTO: Codable, Hashable {

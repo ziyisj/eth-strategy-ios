@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* ETHStrategyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* ETHStrategyApp.swift */; };
+		A10000000000000000000002 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* AppConfig.swift */; };
+		A10000000000000000000003 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* MarketView.swift */; };
+		A10000000000000000000004 /* TradingChartWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* TradingChartWebView.swift */; };
+		A10000000000000000000005 /* ChartBridgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* ChartBridgeController.swift */; };
+		A10000000000000000000006 /* DTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000016 /* DTOs.swift */; };
+		A10000000000000000000007 /* DashboardPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000017 /* DashboardPayload.swift */; };
+		A10000000000000000000008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* Assets.xcassets */; };
+		A10000000000000000000044 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* RootTabView.swift */; };
+		A1000000000000000000000B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001A /* APIClient.swift */; };
+		A1000000000000000000000C /* DashboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001B /* DashboardStore.swift */; };
+		A1000000000000000000000D /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001C /* SignalView.swift */; };
+		A1000000000000000000000E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001D /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1000000000000000000000A /* ETHStrategyIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETHStrategyIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000011 /* ETHStrategyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETHStrategyApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000012 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A10000000000000000000013 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		A10000000000000000000014 /* TradingChartWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingChartWebView.swift; sourceTree = "<group>"; };
+		A10000000000000000000015 /* ChartBridgeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBridgeController.swift; sourceTree = "<group>"; };
+		A10000000000000000000016 /* DTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOs.swift; sourceTree = "<group>"; };
+		A10000000000000000000017 /* DashboardPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPayload.swift; sourceTree = "<group>"; };
+		A10000000000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000000000019 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		A1000000000000000000001A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A1000000000000000000001B /* DashboardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardStore.swift; sourceTree = "<group>"; };
+		A1000000000000000000001C /* SignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalView.swift; sourceTree = "<group>"; };
+		A1000000000000000000001D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1000000000000000000001F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000020 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000021 /* Sources */,
+				A10000000000000000000029 /* Resources */,
+				A10000000000000000000022 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000021 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000023 /* App */,
+				A10000000000000000000024 /* Features */,
+				A10000000000000000000027 /* Networking */,
+				A10000000000000000000028 /* Shared */,
+			);
+			path = Sources/ETHStrategyIOS;
+			sourceTree = SOURCE_ROOT;
+		};
+		A10000000000000000000022 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000A /* ETHStrategyIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000023 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000011 /* ETHStrategyApp.swift */,
+				A10000000000000000000012 /* AppConfig.swift */,
+				A10000000000000000000019 /* RootTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000024 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000025 /* Market */,
+				A10000000000000000000026 /* Signal */,
+				A1000000000000000000002B /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000025 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000013 /* MarketView.swift */,
+				A10000000000000000000014 /* TradingChartWebView.swift */,
+				A10000000000000000000015 /* ChartBridgeController.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000027 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000016 /* DTOs.swift */,
+				A1000000000000000000001A /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000028 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000002A /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000026 /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000001C /* SignalView.swift */,
+			);
+			path = Signal;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000029 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000018 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		A1000000000000000000002A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000017 /* DashboardPayload.swift */,
+				A1000000000000000000001B /* DashboardStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000002B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000001D /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000000000000000000030 /* ETHStrategyIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000040 /* Build configuration list for PBXNativeTarget "ETHStrategyIOS" */;
+			buildPhases = (
+				A1000000000000000000001E /* Sources */,
+				A1000000000000000000001F /* Frameworks */,
+				A10000000000000000000031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETHStrategyIOS;
+			productName = ETHStrategyIOS;
+			productReference = A1000000000000000000000A /* ETHStrategyIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000000000009 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A10000000000000000000030 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A10000000000000000000041 /* Build configuration list for PBXProject "ETHStrategyIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000000000000000000020;
+			productRefGroup = A10000000000000000000022 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000000000000000000030 /* ETHStrategyIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10000000000000000000031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000008 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000000000000000000001E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000002 /* AppConfig.swift in Sources */,
+				A10000000000000000000005 /* ChartBridgeController.swift in Sources */,
+				A10000000000000000000006 /* DTOs.swift in Sources */,
+				A10000000000000000000007 /* DashboardPayload.swift in Sources */,
+				A1000000000000000000000C /* DashboardStore.swift in Sources */,
+				A10000000000000000000001 /* ETHStrategyApp.swift in Sources */,
+				A10000000000000000000003 /* MarketView.swift in Sources */,
+				A1000000000000000000000B /* APIClient.swift in Sources */,
+				A10000000000000000000044 /* RootTabView.swift in Sources */,
+				A1000000000000000000000E /* SettingsView.swift in Sources */,
+				A1000000000000000000000D /* SignalView.swift in Sources */,
+				A10000000000000000000004 /* TradingChartWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000000000042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000000000000000000043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A10000000000000000000044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "ETH Strategy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIInterfaceOrientation = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nous.ethstrategyios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A10000000000000000000045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "ETH Strategy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIInterfaceOrientation = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nous.ethstrategyios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000040 /* Build configuration list for PBXNativeTarget "ETHStrategyIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000044 /* Debug */,
+				A10000000000000000000045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000041 /* Build configuration list for PBXProject "ETHStrategyIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000042 /* Debug */,
+				A10000000000000000000043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000000000009 /* Project object */;
+}
